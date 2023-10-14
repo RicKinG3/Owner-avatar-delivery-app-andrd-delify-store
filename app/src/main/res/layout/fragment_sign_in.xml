@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.ui.fragment.SignUpFragment">
+    tools:context=".presentation.ui.fragment.SignInFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_input_email"
@@ -51,16 +51,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="@string/next"/>
-
-    <Button
-        android:id="@+id/button_sign_in"
+    <TextView
+        android:id="@+id/text123"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@id/button_next"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
-        android:layout_marginTop="8dp"
-        android:text="@string/signin"/>
+        android:text="dfsfsfssd"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

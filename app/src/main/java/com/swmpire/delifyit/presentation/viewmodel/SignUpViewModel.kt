@@ -26,11 +26,7 @@ class SignUpViewModel @Inject constructor(
     private val currentStore: FirebaseUser? get() = getFirebaseStoreUseCase.invoke()
 
     // remove init to disable auto-auth
-    init {
-        currentStore.let {
-            _signUpFlow.value = NetworkResult.Success(true)
-        }
-    }
+
 
     fun signUpStore(storeModel: StoreModel) {
         viewModelScope.launch(Dispatchers.IO) {

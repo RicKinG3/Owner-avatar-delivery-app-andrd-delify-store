@@ -52,6 +52,9 @@ class SignUpFragment : Fragment() {
                     Toast.makeText(requireContext(), "Введите Email и пароль", Toast.LENGTH_SHORT).show()
                 }
             }
+            buttonSignIn.setOnClickListener{
+                findNavController().navigate(SignUpFragmentDirections.actionSignUpFragmentToSignInFragment())
+            }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

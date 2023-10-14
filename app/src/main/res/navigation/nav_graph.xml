@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_itemsFragment"
             app:destination="@id/itemsFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
     </fragment>
     <fragment
         android:id="@+id/itemsFragment"
@@ -43,4 +46,9 @@
             app:popUpTo="@id/nav_host_fragment"
             app:popUpToInclusive="true"/>
     </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.swmpire.delifyit.presentation.ui.fragment.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
 </navigation>
